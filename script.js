@@ -64,7 +64,7 @@ document.querySelector('#item-list').addEventListener('click', function(event) {
     } else {
         updateItem(event);
     }
-}, true);
+});
 
 
 function deleteItem(event){
@@ -84,7 +84,7 @@ function deleteItem(event){
     }
     localStorage.removeItem(`${itemKey}`);
 }
-document.querySelector('#item-list').addEventListener('click', deleteItem);
+// document.querySelector('#item-list').addEventListener('click', deleteItem);
 
 
 function clearAll(event){
